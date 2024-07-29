@@ -1,0 +1,993 @@
+
+/*Contenedor de banner*/
+
+/*reset CSS básico para eliminar margen*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+    display: flex;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 150px; /*altura del banner*/
+    overflow: hidden; /*oculta parte de la imagen*/
+}
+
+@media screen and (max-width: 320px) {
+    .banner {
+        height: 100px;
+    }
+}
+
+/* imagen del banner*/
+.banner img.background {
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+ 
+/* imagen logo*/
+.banner img.logo {
+    position: absolute;
+    top: 12px; /*posicion vertical del logo*/
+    left: 20px; /*posicion horizontal del logo*/
+    width: 230px; /*tamaño del logo*/
+    height: auto; /* mantiene proporción*/
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/*adaptacion a mobile*/
+@media screen and (max-width: 320px) {
+    .banner img.logo {
+        position: absolute;
+        top: 15%; /*posicion vertical del logo*/
+        left: 30%; /*posicion horizontal del logo*/
+        width: 120px; /*tamaño del logo*/
+        height: auto; /* mantiene proporción*/
+   }   
+}
+
+
+/* boton de usuario */
+.button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(400px, -30%); /* centra el boton */
+    background-color: rgb(5, 5, 54); /* color de fondo del boton*/
+    color: white; /*color de texto del boton*/
+    border: none; /*sin borde*/
+    padding: 8px  18px; /*relleno del boton*/
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer; /*cambia el cursor al pasar sobre el botón*/
+    border-radius: 8px; /*bordes redondeados*/
+
+}
+
+ @media screen and (max-width: 320px) {
+    .button {
+        display: none;
+    }
+}
+
+
+
+/*Barra de navegación*/
+
+.blue-fondo {
+    background-color: rgba(0, 0, 88, 0.452);
+}
+
+.blue-fondo .fondo-color li a:hover {
+    background-color: white;
+}
+
+
+.blue-fondo .fondo-color li a:active {
+    background-color: rgb(0, 183, 177);
+}
+
+
+/*características del titulo*/
+
+.titulo { 
+    font-family: "Roboto", sans-serif;
+    color: rgb(5, 5, 54);
+    margin-left: 10px; /* añade margen izquierdo al texto*/
+    margin-top: 20px; /*añade margen superior al texto*/
+}
+
+@media screen and (max-width: 320px) {
+    .titulo {
+    font-family: "Roboto", sans-serif;
+    color: rgb(5, 5, 54);
+    font-size: 16px;
+    margin-top: 8px;
+}
+}
+
+/*características del parrafo en Home*/
+
+.parrafo1 {
+    font-family: "Roboto", sans-serif;
+    color:rgb(5, 5, 54);
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 10px; /*añade margen inferior*/
+    
+}
+
+/*personalización de imagen en Home*/
+
+.edificio {
+    height: auto;
+    width: 100%;
+
+} 
+
+
+
+
+/*características del footer*/
+
+.texto-footer {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+/*Personalización page Inscripciones*/
+
+/*características titulos de información*/
+.titulos-cuadros {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+}
+
+/*características de cada título*/
+.materias-dispo {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.nombre-materia {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+/*características de la lista de materias-cuadros*/
+/*primer materia*/
+.recuadro-materias1 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.recuadro-materias1 ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 18px; 
+    width: 18%;
+}
+
+.recuadro-materias1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+/*segunda materia*/
+.recuadro-materias2 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+    
+}
+
+.recuadro-materias2 ul {
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 18px; 
+    width: 18%;
+}
+
+.recuadro-materias2 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*tercer materia*/
+.recuadro-materias3 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+    
+}
+
+.recuadro-materias3 ul {
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.recuadro-materias3 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*cuarta materia*/
+.recuadro-materias4 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;   
+}
+
+.recuadro-materias4 ul {
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.recuadro-materias4 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*quinta materia*/
+.recuadro-materias5 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;   
+}
+
+.recuadro-materias5 ul {
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.recuadro-materias5 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*sexta materia*/
+.recuadro-materias6 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.recuadro-materias6 ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 18px; 
+    width: 18%;
+}
+
+.recuadro-materias6 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*características cuadro de comisiones*/
+
+.comisiones {
+    color: white;
+    font-size: 16px;
+}
+.comision1 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 76px;
+    margin-left: 270px;
+}
+
+.comision1 ul {
+    list-style-type: none;
+    margin-top: -50%;
+    margin-left: 7%; 
+}
+
+.comision1 li {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 20px; 
+    width: 90%; 
+}
+
+.comision2 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 270px;
+}
+
+.comision2 ul {
+    list-style-type: none;
+    margin-left: 7%;           
+}
+
+.comision2 li {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 20px; 
+    width: 90%; 
+}
+
+.comision3 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 270px;
+}
+
+.comision3 ul {
+    list-style-type: none;
+    margin-left: 7%;           
+}
+
+.comision3 li {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 20px; 
+    width: 90%; 
+}
+.comision4 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 270px;
+}
+
+.comision4 ul {
+    list-style-type: none;
+    margin-left: 7%;           
+}
+
+.comision4 li {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 20px; 
+    width: 90%; 
+}
+.comision5 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 270px;
+}
+
+.comision5 ul {
+    list-style-type: none;
+    margin-left: 7%;           
+}
+
+.comision5 li {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 20px; 
+    width: 90%; 
+}
+.comision6 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 270px;
+    margin-bottom: 40%;
+}
+
+.comision6 ul {
+    list-style-type: none;
+    margin-left: 7%;           
+}
+
+.comision6 li {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 20px; 
+    width: 90%; 
+}
+
+
+/*Personalización page Carrera*/
+
+/*características de cada título*/
+.plan-estudios {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.año {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+/*características de la lista de plan de estudios*/
+/*primer año*/
+.año1 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.año1 ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.año1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+/*segundo año*/
+.año2 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+    
+}
+
+.año2 ul {
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.año2 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*tercer año*/
+.año3 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+    
+}
+
+.año3 ul {
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.año3 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*cuarto año*/
+.año4 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;   
+}
+
+.año4 ul {
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.año4 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*quinto año*/
+.año5 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;   
+}
+
+.año5 ul {
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.año5 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*sexto año*/
+.año6 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.año6 ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.año6 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*caracteristicas secciones del recuadro de asignaturas*/
+.barra-recuadro {
+    margin-top: 86px;
+    margin-left: 270px;
+}
+
+.barra-recuadro ul {
+    display: flex;/* alinea de forma horizontal las secciones del navbar*/
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(5, 5, 54);
+    margin-top: -50%;
+    margin-left: 3%;
+    width: 90%;
+}
+
+.barra-recuadro li {
+    color: white;
+    padding: 24px; /*relleno dentro de los enlaces*/
+    text-decoration: none; /*elimina el subrayado*/
+    font-size: 12px;
+    padding: 10px; 
+    margin-left: 16px;
+    margin-right: 100px;
+
+}
+
+/*características de los códigos*/
+.lista-codigos {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+
+.lista-codigos ul {
+    background-color: rgb(143, 140, 140);
+    list-style-type: none;
+    width: 10%;
+    margin-left: 22.4%;
+    
+}
+
+.lista-codigos li {
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/*características lista asignaturas*/
+/*asignatura 1*/
+.asignaturas {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+.asignaturas ul {
+    display: flex;
+    background-color: darkcyan;
+    list-style-type: none;
+    width: 62%;
+    margin-left: 32.4%;
+    margin-top: -266px;
+    
+}
+.asignaturas li {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 16px;
+}
+
+/*asignatura 2*/
+.asignaturas2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+.asignaturas2 ul {
+    display: flex;
+    background-color: darkcyan;
+    list-style-type: none;
+    width: 62%;
+    margin-left: 32.4%;
+    margin-top: 4px;
+    
+}
+.asignaturas2 li {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 16px;
+}
+
+/*asignatura 3*/
+.asignaturas3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+.asignaturas3 ul {
+    display: flex;
+    background-color: darkcyan;
+    list-style-type: none;
+    width: 62%;
+    margin-left: 32.4%;
+    margin-top: 4px;
+    
+}
+.asignaturas3 li {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 16px;
+}
+/*asignatura 4*/
+.asignaturas4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+.asignaturas4 ul {
+    display: flex;
+    background-color: darkcyan;
+    list-style-type: none;
+    width: 62%;
+    margin-left: 32.4%;
+    margin-top: 4px;
+    
+}
+.asignaturas4 li {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 16px;
+}
+
+/*asignatura 5*/
+.asignaturas5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+.asignaturas5 ul {
+    display: flex;
+    background-color: darkcyan;
+    list-style-type: none;
+    width: 62%;
+    margin-left: 32.4%;
+    margin-top: 4px;
+    margin-bottom: 40%;
+    
+}
+.asignaturas5 li {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 16px;
+}
+
+/*características boton redactar*/
+.button-redactar {
+        margin-top: 80px;
+        margin-left: 18px;
+        background-color: rgb(5, 5, 54); /* color de fondo del boton*/
+        color: white; /*color de texto del boton*/
+        border: none; /*sin borde*/
+        padding: 8px  18px; /*relleno del boton*/
+        text-align: center;
+        font-size: 12px;
+        cursor: pointer; /*cambia el cursor al pasar sobre el botón*/
+        border-radius: 8px; /*bordes redondeados*/
+        width: 18%;
+    
+    }
+
+/*características de la lista secciones de buzon*/
+/*recibidos*/
+.recibidos {
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.recibidos ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.recibidos a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*destacados*/
+.destacados {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.destacados ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.destacados a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}/*enviados*/
+.enviados {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.enviados ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.enviados a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+/*borradores*/
+.borradores {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.borradores ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.borradores a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+/*papelera*/
+.papelera {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.papelera ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.papelera a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+/*todos*/
+.todos {
+    font-family: "Roboto", sans-serif;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.todos ul {
+    list-style-type: none; 
+    background-color: darkcyan;
+    padding: 24px; 
+    width: 18%;
+}
+
+.todos a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+/*BUZÓN*/
+.buzon1 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;    
+}
+.buzon1 ul { 
+    margin-left: 30%;
+    margin-top: -33%;
+    display: flex;
+    background-color: dimgrey;
+    width: 60%;
+    list-style-type: none;
+}
+.buzon1 li {
+    margin: 18px;
+}
+.buzon1 a {
+    text-decoration: none;
+    color: rgb(5, 5, 54);
+}
+
+
+.buzon2 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;    
+}
+.buzon2 ul { 
+    margin-left: 30%;
+    display: flex;
+    background-color: dimgrey;
+    width: 60%;
+    list-style-type: none;
+    margin-top: 4px;
+}
+.buzon2 li {
+    margin: 18px;
+}
+.buzon2 a {
+    text-decoration: none;
+    color: rgb(5, 5, 54);
+}
+.buzon3 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;    
+}
+.buzon3 ul { 
+    margin-left: 30%;
+    display: flex;
+    background-color: dimgrey;
+    width: 60%;
+    list-style-type: none;
+    margin-top: 4px;
+}
+.buzon3 li {
+    margin: 18px;
+}
+.buzon3 a {
+    text-decoration: none;
+    color: rgb(5, 5, 54);
+}
+.buzon4 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;    
+}
+.buzon4 ul { 
+    margin-left: 30%;
+    display: flex;
+    background-color: dimgrey;
+    width: 60%;
+    list-style-type: none;
+    margin-top: 4px;
+}
+.buzon4 li {
+    margin: 18px;
+}
+.buzon4 a {
+    text-decoration: none;
+    color: rgb(5, 5, 54);
+}
+.buzon5 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;    
+}
+.buzon5 ul { 
+    margin-left: 30%;
+    display: flex;
+    background-color: dimgrey;
+    width: 60%;
+    list-style-type: none;
+    margin-top: 4px;
+}
+.buzon5 li {
+    margin: 18px;
+}
+.buzon5 a {
+    text-decoration: none;
+    color: rgb(5, 5, 54);
+}
+.buzon6 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;    
+}
+.buzon6 ul { 
+    margin-left: 30%;
+    display: flex;
+    background-color: dimgrey;
+    width: 60%;
+    list-style-type: none;
+    margin-top: 4px;
+    margin-bottom: 40%;
+}
+.buzon6 li {
+    margin: 18px;
+}
+.buzon6 a {
+    text-decoration: none;
+    color: rgb(5, 5, 54);
+}
+
+
+/*sección mensajes recibidos*/
+
+.mensaje {
+    background-color: dimgrey;
+    padding: 80px;
+    width: 60%;
+    margin-left: 24%;
+    margin-top: -33.5%;
+    margin-bottom: 40%;
+}
+
+/*adaptacion a mobile*/
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
